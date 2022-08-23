@@ -1,26 +1,25 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from "framer-motion";
+import React from "react";
 
-import { images } from '../../constants';
+import { images } from "../../constants";
 
-import './Header.scss';
+import "./Header.scss";
 
+import { AppWrap } from '../../wrapper';
 
 const scaleVariants = {
-  whileInView:{
-    scale:[0, 1],
-    opacity:[0,1],
-    transition:{
-      duration:1,
-      ease:'easeInOut'
-    }
-  }
-}
-
-
+  whileInView: {
+    scale: [0, 1],
+    opacity: [0, 1],
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Header = () => (
-  <div id='home' className="app__header app__flex">
+  <div  className="app__header app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
@@ -28,7 +27,6 @@ const Header = () => (
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex">
-          
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Dost Mohammad Shikder</h1>
@@ -37,7 +35,6 @@ const Header = () => (
 
         <div className="tag-cmp app__flex">
           <p className="p-text">Front-End Developer</p>
-         
         </div>
       </div>
     </motion.div>
@@ -49,30 +46,26 @@ const Header = () => (
     >
       <img src={images.profile} alt="profile_bg" />
       <motion.img
-       whileInView={{ scale: [0, 1] }}
-       transition={{ duration: 1, ease:'easeInOut' }}
-       src={images.circle} alt='profile_circle' 
-       className='overlay_circle'
+        whileInView={{ scale: [0, 1] }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        src={images.circle}
+        alt="profile_circle"
+        className="overlay_circle"
       />
     </motion.div>
 
     <motion.div
-    variants={scaleVariants}
-    whileInView={scaleVariants.whileInView}
-    className='app_header-circles'
+      variants={scaleVariants}
+      whileInView={scaleVariants.whileInView}
+      className="app_header-circles"
     >
-      {
-        [images.flutter, images.redux, images.sass].map((circle, index)=>
-        <div className='circle-cmp app_flex' key={`circle-${index}`}>
+      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        <div className="circle-cmp app_flex" key={`circle-${index}`}>
           <img src={circle} alt="circle" />
-
-
         </div>
-        )
-      }
-    
+      ))}
     </motion.div>
   </div>
 );
 
-export default Header
+export default AppWrap(Header, 'home');
