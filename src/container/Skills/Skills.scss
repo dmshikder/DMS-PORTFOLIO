@@ -8,10 +8,10 @@
   width: 80%;
   margin-top: 3rem;
   display: flex;
-
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
   div {
     display: flex;
     flex-direction: row;
@@ -24,13 +24,13 @@
     }
     div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
   }
 
   @media screen and (max-width: 900px) {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -75,5 +75,39 @@
   p {
     font-weight: 500;
     margin-top: 0.5rem;
+  }
+}
+
+.app__skills-exp-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.app__skills-exp-works {
+  flex: 1;
+
+  .app__skills-exp-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+}
+
+.app__skills-exp-year {
+  margin-right: 3rem;
+
+  p {
+    font-weight: 800;
+    color: var(--secondary-color);
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-right: 1rem;
   }
 }
