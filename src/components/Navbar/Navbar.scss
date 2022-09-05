@@ -10,6 +10,36 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
+
+  .app__resume {
+    background-color: #44c4e1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.1rem;
+    }
+    @media screen and(max-width:376px) {
+      display: none;
+      // background-color: red;
+    }
+  }
+}
+
+.app__resume-mobileView {
+  background-color: #44c4e1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+  }
 }
 
 .app__navbar-logo {

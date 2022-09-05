@@ -19,6 +19,11 @@ const Navbar = () => {
         ))}
       </ul>
 
+
+      <div >
+        <button className="app__resume"><a target='_blank' href="https://drive.google.com/file/d/1ElxXuzGTB-Ya0vrHd3jfVyVGo1NcuAlh/view?usp=sharing" rel="noreferrer">Resume</a></button>
+      </div>
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
@@ -35,7 +40,12 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+                 
+        <button className="app__resume-mobileView"><a target='_blank' href="https://drive.google.com/file/d/1ElxXuzGTB-Ya0vrHd3jfVyVGo1NcuAlh/view?usp=sharing" rel="noreferrer">Resume</a></button>
+    
             </ul>
+
+         
           </motion.div>
         )}
       </div>

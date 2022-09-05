@@ -15,6 +15,7 @@ import python from '../assests/python.png';
 import react from '../assests/react.png';
 import redux from '../assests/redux.png';
 import sass from '../assests/sass.png';
+import testjs from '../assests/testjs.png';
 import typescript from '../assests/typescript.png';
 import vue from '../assests/vue.png';
 
@@ -36,6 +37,7 @@ import skype from '../assests/skype.png';
 import spotify from '../assests/spotify.png';
 
 export default {
+  testjs,
   email,
   mobile,
   api,
