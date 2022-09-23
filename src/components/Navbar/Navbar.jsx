@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
       <div >
-        <button className="app__resume"><a target='_blank' href="https://drive.google.com/file/d/1ElxXuzGTB-Ya0vrHd3jfVyVGo1NcuAlh/view?usp=sharing" rel="noreferrer">Resume</a></button>
+        <button className="app__resume"><a target='_blank' href="https://drive.google.com/file/d/1Z9GHKm2A2rfZducudGr3rs_Ro-R7VNBb/view?usp=sharing" rel="noreferrer">Resume</a></button>
       </div>
 
       <div className="app__navbar-menu">
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </li>
               ))}
                  
-        <button className="app__resume-mobileView"><a target='_blank' href="https://drive.google.com/file/d/1ElxXuzGTB-Ya0vrHd3jfVyVGo1NcuAlh/view?usp=sharing" rel="noreferrer">Resume</a></button>
+        <button className="app__resume-mobileView"><a target='_blank' href="https://drive.google.com/file/d/1Z9GHKm2A2rfZducudGr3rs_Ro-R7VNBb/view?usp=sharing" rel="noreferrer">Resume</a></button>
     
             </ul>
 
